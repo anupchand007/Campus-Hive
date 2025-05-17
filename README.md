@@ -1,12 +1,32 @@
-# React + Vite
+# CampusHive (BIT 7th Sem Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CampusHive is a modern web platform designed to simplify campus management and enhance student-faculty interaction. This repository contains the **frontend application** built with **Vite + React**, styled using **Tailwind CSS**, and powered by **Shadcn/UI components** for a clean, responsive, and intuitive user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Secure Authentication with role-based access (Student, Faculty, Admin)
+- Study Material Repository (upload/download notes, slides, assignments)
+- Discussion Forum with threads, replies, and upvotes
+- Announcements/Notices Board with archives and optional notifications
+- Event Calendar to track academic events, exams, and reminders
+- Personalized Dashboard with quick access to notices, events, and joined groups
+- Project Showcase Section for students to display their projects (optional)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠Tech Stack
+
+- **Vite**
+- **React**
+- **React Router**
+- **Tailwind CSS**
+- **Shadcn/UI**
+- **Axios**
+- **React Toastify**
+- **Framer Motion**
+- **React Hook Form**
+- **Dayjs**
+
+

@@ -24,13 +24,3 @@ CampusHive is a modern web platform designed to streamline campus management and
 - **Framer Motion**
 - **React Hook Form**
 
-## 📦 Project Structure
-
-src/
-├── components/
-├── pages/
-├── services/
-├── contexts/
-├── assets/
-├── App.jsx
-└── main.jsx

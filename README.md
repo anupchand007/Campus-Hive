@@ -1,4 +1,4 @@
-# CampusHive (BIT 7th Sem Project)
+# CampusHive (BIT 7th Sem Project) By Anup Chand, Ananta Kadel and Sumit Chaudhary
 
 <<<<<<< HEAD
 CampusHive is a modern web platform designed to streamline campus management and enhance student-faculty collaboration. This repository contains the **frontend application** built with **Vite + React**, styled using **Tailwind CSS**, and enhanced with **Shadcn/UI components** for clean, responsive, and accessible interfaces.

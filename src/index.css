@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.links{
+.links, .landing{
     font-family: 'Poppins', 'Courier New', Courier, monospace;
 }
 

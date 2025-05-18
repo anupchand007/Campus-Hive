@@ -1,14 +1,14 @@
-import './App.css'
-import Navbar from './Components/Navbar'
+import "./App.css";
+import LandingPageCard from "./Components/LandingPageCard";
+import LandingPage from "./Pages/LandingPage";
+
 
 function App() {
-
-
   return (
     <>
-      <Navbar/>
+    <LandingPage/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

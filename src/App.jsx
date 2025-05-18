@@ -1,5 +1,5 @@
 import "./App.css";
-import LandingPageCard from "./Components/LandingPageCard";
+import FeatureCard from "./Components/FeatureCard";
 import LandingPage from "./Pages/LandingPage";
 
 

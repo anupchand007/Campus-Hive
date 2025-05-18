@@ -1,13 +1,19 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
-import Body from "../Components/Body";
 import Footer from "../Components/Footer";
 import art from "../assets/Art.svg";
+import notes from "../assets/DocumentAdd.svg";
+import forum from "../assets/ChatLine.svg";
+import notice from "../assets/Bell.svg";
+import calendar from "../assets/CalendarDate.svg";
+import FeatureCard from "../Components/FeatureCard";
+import { Link } from "react-router-dom";
+
 
 const LandingPage = () => {
   return (
     <div>
-      <div className="h-160 bg-blue-900 pt-12 pr-12 pl-12 ">
+      <div className="h-170 bg-blue-900 pt-12 pr-12 pl-12">
         <div className=" bg-sky-600 rounded-t-2xl">
           <Navbar />
 
@@ -37,7 +43,58 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <Body />
+
+      <div className=" bg-gray-300 pl-12 pr-12 border-zinc-700">
+        <div>
+          <h1
+            className="links  bg-white flex justify-center items-center text-7xl
+        font-extrabold p-10  border-t-amber-500"
+          >
+            Features of our Site
+          </h1>
+
+          {/* Button Area */}
+          <div className="grid grid-cols-3 grid-rows-2 bg-white h-full ">
+            <Link to="/">
+              <FeatureCard
+              srcs={notes}
+              title="Study Materail"
+              desc="Upload and Download notes, assignments, and resources."
+            />
+            </Link>
+
+            <Link to="/"><FeatureCard
+              srcs={forum}
+              title="Discussion Forum"
+              desc="Paticipate in topic based discussion with peers and faculty."
+            /></Link>
+
+            <Link to="/"><FeatureCard
+              srcs={notice}
+              title="Announcements & Notices"
+              desc="Stay informed with the latest campus news and updates."
+            /></Link>
+
+            <Link to="/"><FeatureCard
+              srcs={calendar}
+              title="Event Calendar"
+              desc="Keep track of upcoming academic events and important dates."
+            /></Link>
+
+            <Link to="/"><FeatureCard
+              srcs={notes}
+              title="Dashboard"
+              desc="Get you own personal Dashboard, which helps to track your progress."
+            /></Link>
+
+            <Link><FeatureCard
+              srcs={notes}
+              title="Enrolls in Different Subjects"
+              desc="Upload and Download notes, assignments, and resources"
+            /></Link>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );

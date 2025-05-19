@@ -1,33 +1,33 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../assets/landingLogo.png";
 
 const Footer = () => {
-  const year = new Date().getFullYear();
   return (
-    <div>
-      <div>
-        <h3 className="items-center flex justify-center">All Right are Reversed and Protected by CampusHive™️ {year}</h3>
-      </div>
+    <footer className="bg-blue-950 text-white">
+      <div className="flex flex-col md:flex-row items-center justify-between p-6 max-w-7xl mx-auto">
+        <img src={logo} alt="Logo" width={200} className="mb-4 md:mb-0" />
 
-      <div className="p-5 flex h-25 bg-blue-950  justify-around items-center w-full gap-2 ">
-        <img src={logo} alt="" width={230} />
-        <ul className="links flex w-2/3 justify-around items-center text-amber-100 text-2xl font-bold">
+        <ul className="flex flex-col md:flex-row gap-4  font-semibold text-amber-300 text-2xl">
           <li>
-            <NavLink to='/about'>About</NavLink>
+            <Link to="/about" className="hover:text-white transition">About</Link>
           </li>
           <li>
-            <NavLink to='/privacy'>Privacy</NavLink>
+            <Link to="/privacy" className="hover:text-white transition">Privacy</Link>
           </li>
           <li>
-            <NavLink to='/terms'>Terms</NavLink>
+            <Link to="/terms" className="hover:text-white transition">Terms</Link>
           </li>
           <li>
-            <NavLink to='/contact-us'>Contact Us</NavLink>
+            <Link to="/contact-us" className="hover:text-white transition">Contact Us</Link>
           </li>
         </ul>
       </div>
-    </div>
+
+      <div className="bg-gray-200 text-center py-2 text-gray-700 text-lg">
+        © {new Date().getFullYear()} CampusHive. All rights reserved.
+      </div>
+    </footer>
   );
 };
 

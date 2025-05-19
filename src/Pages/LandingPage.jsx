@@ -9,7 +9,6 @@ import calendar from "../assets/CalendarDate.svg";
 import FeatureCard from "../Components/FeatureCard";
 import { Link } from "react-router-dom";
 
-
 const LandingPage = () => {
   return (
     <div>
@@ -44,7 +43,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className=" bg-gray-300 pl-12 pr-12 border-zinc-700">
+      <div className=" bg-gray-300 pl-12 pr-12">
         <div>
           <h1
             className="links  bg-white flex justify-center items-center text-7xl
@@ -55,43 +54,42 @@ const LandingPage = () => {
 
           {/* Button Area */}
           <div className="grid grid-cols-3 grid-rows-2 bg-white h-full ">
-            <Link to="/">
-              <FeatureCard
+            <FeatureCard
               srcs={notes}
               title="Study Materail"
               desc="Upload and Download notes, assignments, and resources."
+              to=""
             />
-            </Link>
 
-            <Link to="/"><FeatureCard
+            <FeatureCard
               srcs={forum}
               title="Discussion Forum"
               desc="Paticipate in topic based discussion with peers and faculty."
-            /></Link>
+            />
 
-            <Link to="/"><FeatureCard
+            <FeatureCard
               srcs={notice}
               title="Announcements & Notices"
               desc="Stay informed with the latest campus news and updates."
-            /></Link>
+            />
 
-            <Link to="/"><FeatureCard
+            <FeatureCard
               srcs={calendar}
               title="Event Calendar"
               desc="Keep track of upcoming academic events and important dates."
-            /></Link>
+            />
 
-            <Link to="/"><FeatureCard
+            <FeatureCard
               srcs={notes}
               title="Dashboard"
-              desc="Get you own personal Dashboard, which helps to track your progress."
-            /></Link>
+              desc="Get you own personal Dashboard, helps to track your progress."
+            />
 
-            <Link><FeatureCard
+            <FeatureCard
               srcs={notes}
-              title="Enrolls in Different Subjects"
-              desc="Upload and Download notes, assignments, and resources"
-            /></Link>
+              title="Enrolls in Subjects"
+              desc="Enroll in various subjects that you have interest on and get Knowledge"
+            />
           </div>
         </div>
       </div>

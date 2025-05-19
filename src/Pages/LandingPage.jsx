@@ -17,7 +17,7 @@ const LandingPage = () => {
       <div className=" bg-blue-900 pt-5 pr-5 pl-5 sm:pt-12 sm:pr-12 sm:pl-12 ">
         <div className=" bg-sky-600 rounded-t-2xl ">
           <Navbar />
-         <div className="w-full flex justify-center px-5 sm:px-20"> <div className="border-b-2 border-b-sky-500 w-full"></div></div>
+         <div className="w-full flex justify-center px-5 sm:px-20"> <div className="border-b-2 border-b-gray-600 w-full"></div></div>
           <div className="sm:flex sm:gap-6">
             <div className="flex gap-8 justify-evenly ">
               <img
@@ -44,7 +44,7 @@ const LandingPage = () => {
                 to="/feature"
                 className="links bg-amber-400 p-3 mt-3 flex 
                 justify-center rounded-full border-none font-semibold text-white 
-                mr-50 sm:ml-75 sm:mr-120 hover:scale-105 hover:bg-black transition-all duration-300 text-center"
+                mr-30 sm:ml-75 sm:mr-120 hover:scale-105 hover:bg-black transition-all duration-300 text-center"
               >
                 Get Started
               </Link>
@@ -59,11 +59,11 @@ const LandingPage = () => {
       >
         <div>
           <span
-            className="links  bg-white flex justify-center items-center md:text-7xl 
-        font-extrabold p-10  text-4xl "
+            className="links  bg-white flex justify-center items-center sm:text-7xl  font-extrabold p-5  text-2xl "
           >
             Features of our Site
           </span>
+          <div className="w-full flex justify-center px-5 sm:px-20 bg-white"> <div className="border-b-2 border-b-gray-200 w-full"></div></div>
 
           {/* Button Area */}
 

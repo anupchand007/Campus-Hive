@@ -4,22 +4,31 @@ import logo from "../assets/landingLogo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-950 text-white">
-      <div className="flex flex-col md:flex-row items-center justify-between p-6 max-w-7xl mx-auto">
-        <img src={logo} alt="Logo" width={200} className="mb-4 md:mb-0" />
-
-        <ul className="flex flex-col md:flex-row gap-4  font-semibold text-amber-300 text-2xl">
+    <footer className="bg-blue-950  ">
+      <div className="p-3 flex-row items-center sm:flex sm:justify-evenly sm:items-center ">
+        <figure className="flex justify-center sm:w-96 ">
+          <img src={logo} alt="Logo" className="w-80 mb-4 sm:w-100 " />
+        </figure>
+        <ul className="flex md:justify-end gap-4  font-semibold text-amber-300 text-2xl  sm:w-1/2 flex-wrap justify-center items-center">
           <li>
-            <Link to="/about" className="hover:text-white transition">About</Link>
+            <Link to="/about" className="hover:text-white transition">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/privacy" className="hover:text-white transition">Privacy</Link>
+            <Link to="/privacy" className="hover:text-white transition">
+              Privacy
+            </Link>
           </li>
           <li>
-            <Link to="/terms" className="hover:text-white transition">Terms</Link>
+            <Link to="/terms" className="hover:text-white transition">
+              Terms
+            </Link>
           </li>
           <li>
-            <Link to="/contact-us" className="hover:text-white transition">Contact Us</Link>
+            <Link to="/contact-us" className="hover:text-white transition">
+              Contact Us
+            </Link>
           </li>
         </ul>
       </div>

@@ -12,48 +12,60 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <div>
-      <div className="h-170 bg-blue-900 pt-12 pr-12 pl-12">
-        <div className=" bg-sky-600 rounded-t-2xl">
+      <div
+        className=" bg-blue-900 pt-5 pr-5 pl-5 
+      md:pt-12 md:pr-12 md:p-12 "
+      >
+        <div className=" bg-sky-600 rounded-t-2xl ">
           <Navbar />
 
-          <div className="rounded-2xl h-150 flex gap-8 justify-evenly">
-            <img
-              className="ml-20 hover:scale-110 transition duration-200 ease-in-out"
-              src={art}
-              alt="teacher"
-              width={600}
-            />
-            <div className=" p-10  w-2/3 ">
-              <div className="text-6xl font-bold w-2/3 justify-center items-center p-5 ml-15 text-amber-300">
+          <div className="sm:flex sm:gap-6 border-t-2 ">
+            <div className="flex gap-8 justify-evenly ">
+              <img
+                className="w-100 sm:w-200 sm:ml-10 hover:scale-110 transition-all duration-150 ease-in-out"
+                src={art}
+                alt="teacher"
+              />
+            </div>
+            <div className="p-5 sm:p-10 flex-row justify-center sm:w-2/3">
+              <div className=" text-4xl sm:text-6xl  font-bold text-amber-300">
                 Streamline Your Campus Experience
               </div>
-              <p className=" landing w-2/3 mt-5 ml-15 text-2xl font-Poppins text-white">
+              <p className="landing mt-5 text-xsl sm:text-2xl font-Poppins text-white">
                 CampusHive is your campus community’s digital space a simple,
                 clean, and interactive platform where students, teachers, and
-                clubs can stay connected. Whether it’s about upcoming events,
-                important notices, or fun activities happening around your
-                college, CampusHive keeps everything in one place.
+                clubs can stay connected.
+                <br />
+                Whether it’s about upcoming events, important notices, or fun
+                activities happening around your college, CampusHive keeps
+                everything in one place.
                 <br />
               </p>
-              <button className="links border-none mt-5 p-2 rounded-2xl bg-amber-400 ml-75 cursor-pointer">
-                Get Started
-              </button>
+              <Link>
+                <button className="links bg-amber-400 p-3 mt-3 flex  rounded-2xl border-none font-semibold text-white sm:ml-75">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div className=" bg-gray-300 pl-12 pr-12">
+      <div
+        className=" bg-gray-300 pt-5 pr-5 pl-5 
+      md:pt-12 md:pr-12 md:p-12  "
+      >
         <div>
-          <h1
-            className="links  bg-white flex justify-center items-center text-7xl
-        font-extrabold p-10  border-t-amber-500"
+          <span
+            className="links  bg-white flex justify-center items-center md:text-7xl
+        font-extrabold p-10  border-t-amber-500 text-4xl "
           >
             Features of our Site
-          </h1>
+          </span>
 
           {/* Button Area */}
-          <div className="grid grid-cols-3 grid-rows-2 bg-white h-full ">
+
+          <div className=" grid grid-cols-1  bg-white p-5 sm:grid-cols-3">
             <FeatureCard
               srcs={notes}
               title="Study Materail"

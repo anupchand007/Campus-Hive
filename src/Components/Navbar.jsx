@@ -5,9 +5,11 @@ import logo from "../assets/landingLogo.png";
 const Navbar = () => {
   return (
     <>
-      <div className="p-5 flex h-25  justify-around items-center w-full gap-2 ">
-        <img src={logo} alt="" width={230} />
-        <ul className="links flex w-2/3 justify-around items-center text-amber-100 text-2xl font-bold">
+      <div className=" p-5 flex h-25  justify-around items-center w-full gap-2 ">
+
+        <img src={logo} alt="" className="w-60 md:40 " />
+        
+        <ul className="links hidden md:flex w-2/3 justify-around items-center text-amber-100 text-2xl font-bold">
           <li>
             <NavLink
               className={({ isActive }) =>
@@ -57,9 +59,12 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
+
+
         <NavLink
           to="/login"
-          className="links flex justify-center items-center bg-amber-400 rounded-2xl w-20 h-10 cursor-pointer"
+          className="
+          links hidden sm:flex justify-center items-center bg-amber-400 rounded-2xl w-20  cursor-pointer h-10"
         >
           Login
         </NavLink>

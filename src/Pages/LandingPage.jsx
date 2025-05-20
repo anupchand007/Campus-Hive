@@ -44,7 +44,7 @@ const LandingPage = () => {
                 to="/feature"
                 className="links bg-amber-400 p-3 mt-3 flex 
                 justify-center rounded-full border-none font-semibold text-white 
-                mr-30 sm:ml-75 sm:mr-120 hover:scale-105 hover:bg-black transition-all duration-300 text-center"
+                mr-30 sm:ml-75 sm:mr-120 hover:scale-105 xl: hover:bg-black transition-all duration-300 text-center"
               >
                 Get Started
               </Link>

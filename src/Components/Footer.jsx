@@ -4,37 +4,63 @@ import logo from "../assets/landingLogo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-950  ">
-      <div className="p-3 flex-row items-center sm:flex sm:justify-evenly sm:items-center ">
-        <figure className="flex justify-center sm:w-96 ">
-          <img src={logo} alt="Logo" className="w-80 mb-4 sm:w-100 " />
-        </figure>
-        <ul className="flex md:justify-end gap-4  font-semibold text-amber-300 text-2xl  sm:w-1/2 flex-wrap justify-center items-center">
-          <li>
-            <Link to="/about" className="hover:text-white transition">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/privacy" className="hover:text-white transition">
-              Privacy
-            </Link>
-          </li>
-          <li>
-            <Link to="/terms" className="hover:text-white transition">
-              Terms
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact-us" className="hover:text-white transition">
-              Contact Us
-            </Link>
-          </li>
-        </ul>
+    <footer className="bg-blue-950">
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+          {/* Logo section */}
+          <figure className="w-full sm:w-auto flex justify-center">
+            <img 
+              src={logo} 
+              alt="Campus Hive Logo" 
+              className="w-48 sm:w-60 md:w-72 h-auto"
+            />
+          </figure>
+
+          {/* Navigation Links */}
+          <nav className="w-full sm:w-auto">
+            <ul className="flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6 text-amber-300 text-lg sm:text-xl font-semibold">
+              <li>
+                <Link 
+                  to="/about" 
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/privacy" 
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  Privacy
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/terms" 
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  Terms
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/contact-us" 
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
-      <div className="bg-gray-200 text-center py-2 text-gray-700 text-lg">
-        © {new Date().getFullYear()} CampusHive. All rights reserved.
+      {/* Copyright section */}
+      <div className="bg-gray-200 py-3 px-4 text-center">
+        <p className="text-gray-700 text-sm sm:text-base">
+          © {new Date().getFullYear()} CampusHive. All rights reserved.
+        </p>
       </div>
     </footer>
   );

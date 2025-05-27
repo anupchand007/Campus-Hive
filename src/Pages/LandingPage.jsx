@@ -1,6 +1,14 @@
 import React from "react";
 import { Navbar, Footer, FeatureCard } from "../Components/Index";
-import {Art,Notes,Forum,Notice,Calendar,Dashboard,Enroll,} from  "../assets/icons/index"
+import {
+  Art,
+  Notes,
+  Forum,
+  Notice,
+  Calendar,
+  Dashboard,
+  Enroll,
+} from "../assets/icons/index";
 import { Link } from "react-router-dom";
 
 const LandingPage = () => {
@@ -9,46 +17,51 @@ const LandingPage = () => {
       <div className=" bg-blue-900 pt-5 pr-5 pl-5 sm:pt-12 sm:pr-12 sm:pl-12 ">
         <div className=" bg-sky-600 rounded-t-2xl ">
           <Navbar />
-          <div className="w-full flex justify-center px-5 sm:px-20">
-            {" "}
+          <div className="w-auto flex justify-center px-5 sm:px-20">
             <div className="border-b-2 border-b-gray-600 w-full"></div>
           </div>
-          <div className="sm:flex sm:gap-6">
-            <div className="flex gap-8 justify-evenly ">
+
+          <div className="md:flex md:flex-row gap-5 px-5  flex flex-col items-center">
+            <div className=" md:w-1/3 mx-10  w-1/2 ">
               <img
-                className="w-100 sm:w-200 sm:ml-10 hover:scale-110 transition-all duration-150 ease-in-out"
                 src={Art}
-                alt="teacher"
+                alt=""
+                className="w-full hover:scale-110 transition-all duration-150 ease-in-out sm:w-full"
               />
             </div>
-            <div className="p-5 sm:p-20 flex-row justify-center sm:w-2/3  ">
-              <div className="landing text-4xl sm:text-6xl  font-bold text-amber-300  ">
+
+            <div className="p-2 md:p-5 md:flex md:flex-col sm:w-2/3  gap-6 flex flex-col">
+              <div className="landing  text-3xl md:text-6xl  font-bold text-amber-300 ">
                 Streamline Your Campus Experience
               </div>
-              <p className="landing mt-5 text-xsl sm:text-2xl font-Poppins text-white sm:h-1/2 sm:flex sm:justify-center sm:items-center  ">
+              <p className="landing  text-xsl sm:text-2xl font-Poppins text-gray-100 sm:h-1/2 sm:flex sm:justify-center sm:items-center  ">
                 CampusHive is your campus community’s digital space a simple,
                 clean, and interactive platform where students, teachers, and
                 clubs can stay connected.
+                <br />
                 <br />
                 Whether it’s about upcoming events, important notices, or fun
                 activities happening around your college, CampusHive keeps
                 everything in one place.
                 <br />
+
               </p>
-              <Link
-                to="/feature"
-                className="links bg-amber-400 p-3 mt-3 flex 
-                justify-center rounded-full border-none font-semibold text-white 
-                mr-30 sm:ml-75 sm:mr-120 hover:scale-105 xl: hover:bg-black transition-all duration-300 text-center"
-              >
-                Get Started
-              </Link>
+              <div className=" flex justify-center items-center md:w-1/2  ">
+                <Link
+                  to="/feature"
+                  className="links bg-amber-400 p-3  flex 
+                justify-center rounded-full border-none items-center font-semibold text-black
+                 hover:scale-105 hover:bg-white transition-all duration-75 text-center "
+                >
+                  Get Started
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className=" bg-gray-300 pr-5 pl-5 sm:pr-12 sm:pl-12 ">
+      <div className=" bg-gray-300 pr-5 pl-5 sm:pr-12 sm:pl-12 rounded-b-4xl">
         <div className="py-5 bg-white">
           <div>
             <span className="links pt-5  bg-white flex justify-center items-center sm:text-6xl  font-bold p-5  text-2xl ">

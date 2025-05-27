@@ -41,7 +41,7 @@ const Navbar = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex w-2/3 justify-around items-center text-amber-100 text-xl lg:text-2xl font-bold">
+        <ul className="links hidden md:flex w-2/3 justify-around items-center text-amber-100 text-xl lg:text-2xl font-semibold">
           <li>
             <NavLink
               className={({ isActive }) =>
@@ -95,7 +95,7 @@ const Navbar = () => {
         {/* Login Button - Hidden on mobile, shown on sm and up */}
         <NavLink
           to="/login"
-          className="hidden md:flex justify-center items-center bg-amber-400 rounded-2xl w-20 h-10 font-medium hover:bg-white hover:text-amber-400 transition-all duration-150 ease-in-out"
+          className="hidden md:flex justify-center items-center bg-amber-400 rounded-2xl w-20 h-10 font-medium hover:bg-white hover:text-black transition-all duration-150 ease-in-out"
         >
           Login
         </NavLink>

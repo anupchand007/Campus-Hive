@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 const FeatureCard = ({ srcs, title, desc, to }) => {
   return (
     <Link to={to} className="block w-full">
-      <article className="bg-gray-300 m-3 p-4 rounded-2xl hover:scale-105 transition-all duration-200 ease-in-out">
-        <div className="flex flex-col md:flex-row md:items-center gap-4">
+      <article className="bg-gray-300 m-3 p-2 rounded-2xl  hover:scale-105 transition-all duration-200 ease-in-out ">
+        <div className="flex flex-col md:flex-row md:items-center gap-2 ">
           {/* Image container with responsive sizing */}
           <figure className="flex justify-center w-full md:w-1/3 lg:w-1/4">
             <img 
               src={srcs} 
               alt={title} 
-              className="w-full h-auto object-contain max-h-[200px] md:max-h-[250px]"
+              className="sm:w-3/4 object-contain max-h-[200px] md:max-h-[250px]"
             />
           </figure>
 

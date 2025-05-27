@@ -1,14 +1,6 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
-import art from "../assets/Art.svg";
-import notes from "../assets/DocumentAdd.svg";
-import forum from "../assets/ChatLine.svg";
-import notice from "../assets/Bell.svg";
-import calendar from "../assets/CalendarDate.svg";
-import Dashboard from "../assets/Dashboard.svg";
-import Enroll from "../assets/Enroll.svg";
-import FeatureCard from "../Components/FeatureCard";
+import { Navbar, Footer, FeatureCard } from "../Components/Index";
+import {Art,Notes,Forum,Notice,Calendar,Dashboard,Enroll,} from  "../assets/icons/index"
 import { Link } from "react-router-dom";
 
 const LandingPage = () => {
@@ -17,12 +9,15 @@ const LandingPage = () => {
       <div className=" bg-blue-900 pt-5 pr-5 pl-5 sm:pt-12 sm:pr-12 sm:pl-12 ">
         <div className=" bg-sky-600 rounded-t-2xl ">
           <Navbar />
-         <div className="w-full flex justify-center px-5 sm:px-20"> <div className="border-b-2 border-b-gray-600 w-full"></div></div>
+          <div className="w-full flex justify-center px-5 sm:px-20">
+            {" "}
+            <div className="border-b-2 border-b-gray-600 w-full"></div>
+          </div>
           <div className="sm:flex sm:gap-6">
             <div className="flex gap-8 justify-evenly ">
               <img
                 className="w-100 sm:w-200 sm:ml-10 hover:scale-110 transition-all duration-150 ease-in-out"
-                src={art}
+                src={Art}
                 alt="teacher"
               />
             </div>
@@ -53,57 +48,57 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div
-        className=" bg-gray-300 pr-5 pl-5 
-      sm:pr-12 sm:pl-12 "
-      >
-        <div>
-          <span
-            className="links  bg-white flex justify-center items-center sm:text-7xl  font-extrabold p-5  text-2xl "
-          >
-            Features of our Site
-          </span>
-          <div className="w-full flex justify-center px-5 sm:px-20 bg-white"> <div className="border-b-2 border-b-gray-200 w-full"></div></div>
+      <div className=" bg-gray-300 pr-5 pl-5 sm:pr-12 sm:pl-12 ">
+        <div className="py-5 bg-white">
+          <div>
+            <span className="links pt-5  bg-white flex justify-center items-center sm:text-6xl  font-bold p-5  text-2xl ">
+              Features of our Site
+            </span>
+            <div className="w-full flex justify-center px-5 sm:px-20 bg-white pt-5">
+              {" "}
+              <div className="border-b-2 border-b-gray-200 w-full"></div>
+            </div>
 
-          {/* Button Area */}
+            {/* Button Area */}
 
-          <div className=" grid grid-cols-1  bg-white p-5 sm:grid-cols-3">
-            <FeatureCard
-              srcs={notes}
-              title="Study Materail"
-              desc="Upload and Download notes, assignments, and resources."
-              to=""
-            />
+            <div className=" grid grid-cols-1  bg-white p-5 sm:grid-cols-3  px-10">
+              <FeatureCard
+                srcs={Notes}
+                title="Study Materail"
+                desc="Upload and Download notes, assignments, and resources."
+                to=""
+              />
 
-            <FeatureCard
-              srcs={forum}
-              title="Discussion Forum"
-              desc="Paticipate in topic based discussion with peers and faculty."
-            />
+              <FeatureCard
+                srcs={Forum}
+                title="Discussion Forum"
+                desc="Paticipate in topic based discussion with peers and faculty."
+              />
 
-            <FeatureCard
-              srcs={notice}
-              title="Announcements & Notices"
-              desc="Stay informed with the latest campus news and updates."
-            />
+              <FeatureCard
+                srcs={Notice}
+                title="Announcements & Notices"
+                desc="Stay informed with the latest campus news and updates."
+              />
 
-            <FeatureCard
-              srcs={calendar}
-              title="Event Calendar"
-              desc="Keep track of upcoming academic events and important dates."
-            />
+              <FeatureCard
+                srcs={Calendar}
+                title="Event Calendar"
+                desc="Keep track of upcoming academic events and important dates."
+              />
 
-            <FeatureCard
-              srcs={Dashboard}
-              title="Dashboard"
-              desc="Get you own personal Dashboard, helps to track your progress."
-            />
+              <FeatureCard
+                srcs={Dashboard}
+                title="Dashboard"
+                desc="Get you own personal Dashboard, helps to track your progress."
+              />
 
-            <FeatureCard
-              srcs={Enroll}
-              title="Enrolls in Subjects"
-              desc="Enroll in various subjects that you have interest on and get Knowledge"
-            />
+              <FeatureCard
+                srcs={Enroll}
+                title="Enrolls in Subjects"
+                desc="Enroll in various subjects that you have interest on and get Knowledge"
+              />
+            </div>
           </div>
         </div>
       </div>

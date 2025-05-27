@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/landingLogo.png";
+import {LandingLogo} from "../assets/images/index"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="relative">
       <div className="p-4 flex justify-between items-center w-full">
         {/* Logo - responsive width */}
-        <img src={logo} alt="Campus Hive Logo" className="w-40 md:w-60" />
+        <img src={LandingLogo} alt="Campus Hive Logo" className="w-40 md:w-60" />
 
         {/* Mobile Menu Button */}
         <button

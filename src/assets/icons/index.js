@@ -5,6 +5,7 @@ import Notice from "../icons/Bell.svg";
 import Calendar from "../icons/CalendarDate.svg";
 import Dashboard from "../icons/Dashboard.svg";
 import Enroll from "../icons/Enroll.svg";
+import CampusHive from "../icons/CampusHive.svg";
 
 export {
   Art,
@@ -14,4 +15,5 @@ export {
   Calendar,
   Dashboard,
   Enroll,
+  CampusHive,
 };

@@ -1,13 +1,15 @@
 import "./App.css";
-import FeatureCard from "./Components/FeatureCard";
+
 import LandingPage from "./Pages/LandingPage";
-import Navbar from "./Components/Navbar";
+import {Login} from "./Pages/index"
 
 
 function App() {
   return (
     <>
-      <LandingPage />
+      {/* <LandingPage /> */}
+      <Login/>
+      
     </>
   );
 }
